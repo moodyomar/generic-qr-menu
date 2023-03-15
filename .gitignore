@@ -5,9 +5,6 @@
 /.pnp
 .pnp.js
 /public/images
-/public/hero.webp
-/public/logo-t.png
-/public/logo.png
 
 # testing
 /coverage

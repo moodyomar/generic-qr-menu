@@ -59,14 +59,14 @@ const useStyles = makeStyles((theme) => ({
   },}));
 
 
-const Hero = ({endPoint}) => {
+const Hero = ({endPoint,heroBg, textInHero}) => {
   const classes = useStyles();
 
   return (
     <div className={classes.shapeDivider}>
-      <Box className={classes.root} style={{backgroundImage: `url(${endPoint}hero.jpeg)`,}}>
+      <Box className={classes.root} style={{backgroundImage: `url(${endPoint}${heroBg})`,}}>
         <Box className={classes.overlay} />
-        <img className={classes.logo} src={`${endPoint}in-hero.svg`} alt="Logo" />
+        <img className={classes.logo} src={`${endPoint}${textInHero}`} alt="Logo" />
       </Box>
     </div>
   );
