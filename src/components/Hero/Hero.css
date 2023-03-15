@@ -1,0 +1,23 @@
+@media (min-width:2100px) {
+    .shapedividers_com-673::before {
+        background-size: 100% calc(2vw + 90px);
+    }
+}
+
+.up-arrow {
+    width: 40px;
+    height: 40px;
+    background-color: #D39F47;
+    color: #ffff;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    z-index: 100;
+    bottom: 0;
+    right: 0;
+    margin-right: 15px;
+    margin-bottom: 100px;
+    cursor: pointer;
+}

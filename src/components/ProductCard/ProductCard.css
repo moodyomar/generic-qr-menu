@@ -1,0 +1,109 @@
+.food-card {
+    display: inline-block;
+    border-radius: 10px;
+    transition: all 0.3s ease-in-out;
+    /* box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.2); */
+  }
+  
+  .food-card:hover {
+    transform: scale(1.05) !important;
+    /* box-shadow: 0px 10px 40px rgba(0, 0, 0, 0.3); */
+  }
+  
+  .food-card-img-container {
+    position: relative;
+    overflow: hidden;
+    height: 180px;
+    width: 180px;
+  }
+  
+  .food-card-img-container img {
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+    border-radius: 10px;
+  }
+  
+  .food-card-title-container {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: linear-gradient(to bottom, rgba(0,0,0,0) 0%,rgba(0,0,0,0.9) 100%);
+    color: white;
+    padding: 12px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+  }
+  
+  .food-card-title {
+    margin: 0;
+    font-size: 15px;
+    font-weight: normal;
+  }
+  
+  .food-card-price {
+    margin: 0;
+    font-size: 16px;
+    font-weight: bold;
+    background-color: var(--hoverColor);
+    color: #090A0B;
+    width: auto;
+    padding: 1px 5px;
+    border-radius: 10px;
+  }
+  
+  .logo{
+    position: absolute;
+    width: 25px !important;
+    height: 25px !important;
+    margin-right: 5px;
+    margin-top: 5px;
+  }
+
+  .food-card-img-container {
+    position: relative;
+  }
+  
+  .food-card-img-container:hover img {
+    transform: scale(1);
+    transition: transform 0.5s ease;
+  }
+  
+  .food-card-details {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+  }
+  
+  .food-card-details.show {
+    opacity: 1;
+  }
+  .food-card-details-text{
+    color: white;
+  }
+
+@media screen and (max-width: 400px) {
+  .food-card-img-container{
+max-width: 170px;
+max-height: 170px;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .food-card-img-container{
+max-width: 155px;
+max-height: 155px;
+  }
+}

@@ -1,0 +1,570 @@
+{
+    "catTitle":"فئات",
+    "catDesc":"حلويات مميزه ولذيده جداً",
+
+    "categories": [
+        {
+            "name": "كعكات 🧁",
+            "image": "images/categories/baked-cheese.webp",
+            "desc": "من الاكثر طلباً، الجبنه المخبوزه، تريليتشا واكثر",
+            "products": [
+                {
+                    "name": "تريليتشا",
+                    "category": "كعكات",
+                    "sku": "B",
+                    "price": "15/45/85",
+                    "desc":"",
+                    "picture": "images/mains/terelisha.webp"
+                },
+                {
+                    "name": "بسبوسه",
+                    "category": "كعكات",
+                    "sku": "BB",
+                    "price": "15/40",
+                    "desc":"",
+                    "picture": "images/mains/bsbosa.webp"
+                }
+                ,
+                {
+                    "name": "جبنه مخبوزه",
+                    "category": "كعكات",
+                    "sku": "BB",
+                    "price": "25/50",
+                    "desc":"",
+                    "picture": "images/mains/baked-cheese.webp"
+                },
+                {
+                    "name": "ليالي بيروت",
+                    "category": "كعكات",
+                    "sku": "BB",
+                    "price": "20/45",
+                    "desc":"",
+                    "picture": "images/mains/lyali-beirut.webp"
+                },
+                {
+                    "name": "كعكه اللوتوس",
+                    "category": "لوتوس",
+                    "sku": "A",
+                    "price": "20/45",
+                    "desc":"",
+                    "picture": "images/lotus/a.jpeg"
+                },
+                {
+                    "name": "ريبات حلاڤ",
+                    "category": "لوتوس",
+                    "sku": "AB",
+                    "price": "20/45",
+                    "desc":"",
+                    "picture": "images/lotus/b.jpeg"
+                },
+                {
+                    "name": "تريليتشا فستق",
+                    "category": "לוטוס",
+                    "sku": "AB",
+                    "price": "20/45",
+                    "desc":"",
+                    "picture": "images/mains/terelisha-festock.webp"
+                },
+                {
+                    "name": "فستق حلبي",
+                    "category": "ראשיות",
+                    "sku": "BB",
+                    "price": "20/45",
+                    "desc":"",
+                    "picture": "images/mains/festock.webp"
+                },
+                {
+                    "name": "خشخش",
+                    "category": "كعكات",
+                    "sku": "BB",
+                    "price": "20/45",
+                    "desc":"",
+                    "picture": "images/mains/khshkhsh.webp"
+                },
+                {
+                    "name": "فريرو",
+                    "category": "كعكات",
+                    "sku": "BB",
+                    "price": "20/45",
+                    "desc":"",
+                    "picture": ""
+                },
+                {
+                    "name": "المخملية",
+                    "category": "كعكات",
+                    "sku": "BB",
+                    "price": "20/45",
+                    "desc":"",
+                    "picture": ""
+                },
+                {
+                    "name": "اوريو",
+                    "category": "كعكات",
+                    "sku": "BB",
+                    "price": "20/45",
+                    "desc":"",
+                    "picture": ""
+                },
+                {
+                    "name": "الغابه السوداء",
+                    "category": "كعكات",
+                    "sku": "BB",
+                    "price": "20/45",
+                    "desc":"",
+                    "picture": ""
+                },
+                {
+                    "name": "جلي",
+                    "category": "كعكات",
+                    "sku": "BB",
+                    "price": "20/45",
+                    "desc":"",
+                    "picture": ""
+                }
+            ]
+        },
+        {
+            "name": "شكلاطه 🍫",
+            "image": "images/categories/chocolate.webp",
+            "desc": "طابات شكلاطه، بانكيك، كريب وكل ما يحبه القلب",
+            "products": [
+                {
+                    "name": "كعكه كيندر",
+                    "category": "شكلاطه",
+                    "sku": "C",
+                    "price": "20/45",
+                    "desc":"",
+                    "picture": "images/chocolate/a.webp"
+                },
+                {
+                    "name": "مكس شكلاطه",
+                    "category": "شكلاطه",
+                    "sku": "CB",
+                    "price": "20/45",
+                    "desc":"",
+                    "picture": "images/chocolate/b.webp"
+                },
+                {
+                    "name": "كرز",
+                    "category": "شكلاطه",
+                    "sku": "C",
+                    "price": "20/45",
+                    "desc":"",
+                    "picture": "images/chocolate/cherry-chocolate.webp"
+                },
+                {
+                    "name": "بانكيك",
+                    "category": "شكلاطه",
+                    "sku": "C",
+                    "price": "15 = 2",
+                    "desc":"",
+                    "picture": "images/chocolate/pancakes.webp"
+                },
+                {
+                    "name": "طابات شكلاطه",
+                    "category": "شكلاطه",
+                    "sku": "CB",
+                    "price": "15 = 10",
+                    "desc":"",
+                    "picture": "images/chocolate/choco-balls.webp"
+                },
+
+                {
+                    "name": "توت",
+                    "category": "شكلاطه",
+                    "sku": "C",
+                    "price": "15/40",
+                    "desc":"",
+                    "picture": "images/chocolate/choco-straw.webp"
+                },
+                {
+                    "name": "سوفلي",
+                    "category": "شكلاطه",
+                    "sku": "CB",
+                    "price": 25,
+                    "desc":"",
+                    "picture": "images/chocolate/sofle.webp"
+                },
+                {
+                    "name": "بافل بلجي",
+                    "category": "שוקולד",
+                    "sku": "CB",
+                    "price": 25,
+                    "desc":"",
+                    "picture": "images/chocolate/baffel.webp"
+                }
+            ]
+        },
+        {
+            "name": "بسكويت 🍪",
+            "image": "images/categories/cookies.webp",
+            "desc": "انواع مختلفه ومتعدده من بسكويتات المحل المميزه",
+            "products": [
+                {
+                    "name": "ملاتيت",
+                    "category": "بسكويت",
+                    "sku": "F",
+                    "price": 35,
+                    "desc":"500 غرام",
+                    "picture": "images/cookies/mlatet.webp"
+                },
+                {
+                    "name": "اوزني همين",
+                    "category": "بسكويت",
+                    "sku": "F",
+                    "price": 25,
+                    "desc":"",
+                    "picture": "images/cookies/ozni-hamen.webp"
+                },
+                {
+                    "name": "مبروشه",
+                    "category": "بسكويت",
+                    "sku": "F",
+                    "price": 25,
+                    "desc":"",
+                    "picture": "images/cookies/mabbrosha.webp"
+                },
+                {
+                    "name": "بسكوت كوسمين",
+                    "category": "بسكويت",
+                    "sku": "FB",
+                    "price": 35,
+                    "desc":"",
+                    "picture": "images/cookies/aa1.webp"
+                },
+                {
+                    "name": "بسكويت",
+                    "category": "بسكويت",
+                    "sku": "FB",
+                    "price": 30,
+                    "desc":"",
+                    "picture": "images/cookies/aa2.webp"
+                },
+                {
+                    "name": "بسكويت طحينه",
+                    "category": "بسكويت",
+                    "sku": "FB",
+                    "price": 25,
+                    "desc":"",
+                    "picture": "images/cookies/tahini.webp"
+                },
+                {
+                    "name": "بسكويت لوتوس",
+                    "category": "بسكويت",
+                    "sku": "FB",
+                    "price": 25,
+                    "desc":"",
+                    "picture": "images/cookies/lotus-cookies.webp"
+                },
+                {
+                    "name": "بسكويت نوتيلا",
+                    "category": "بسكويت",
+                    "sku": "FB",
+                    "price": 25,
+                    "desc":"",
+                    "picture": "images/cookies/choco-cookies.webp"
+                },
+                {
+                    "name": "مربى توت",
+                    "category": "بسكويت",
+                    "sku": "FB",
+                    "price": 25,
+                    "desc":"",
+                    "picture": "images/cookies/jam-cookies.webp"
+                },
+                {
+                    "name": "خبز اصفر",
+                    "category": "بسكويت",
+                    "sku": "FB",
+                    "price": 20,
+                    "desc":"",
+                    "picture": "images/cookies/yellow-bread.webp"
+                },
+                {
+                    "name": "ما اعرف",
+                    "category": "بسكويت",
+                    "sku": "FB",
+                    "price": 30,
+                    "desc":"",
+                    "picture": "images/cookies/msholeget.webp"
+                },
+                {
+                    "name": "مكسرات العسل",
+                    "category": "بسكويت",
+                    "sku": "FB",
+                    "price": 30,
+                    "desc":"",
+                    "picture": "images/cookies/moksrat-honey.webp"
+                },
+                {
+                    "name": "ما اعرف",
+                    "category": "بسكويت",
+                    "sku": "FB",
+                    "price": 6.99,
+                    "desc":"",
+                    "picture": "images/cookies/c.webp"
+                },
+                {
+                    "name": "ما اعرف",
+                    "category": "بسكويت",
+                    "sku": "FB",
+                    "price": 6.99,
+                    "desc":"",
+                    "picture": "images/cookies/d.webp"
+                }
+            ]
+        },
+        {
+            "name": "بارد 🥤",
+            "image": "images/categories/softdrinks.webp",
+            "desc": "مشروبات بارده، بسفلورا، ايس كافي، اناناس واكثر",
+            "products": [
+                {
+                    "name": "اييس كافي",
+                    "category": "بارد",
+                    "sku": "B",
+                    "price": 6,
+                    "desc":"",
+                    "picture": "images/softdrinks/icecafe.webp"
+                },
+                {
+                    "name": "بسفلورا",
+                    "category": "بارد",
+                    "sku": "B",
+                    "price": 6,
+                    "desc":"",
+                    "picture": "images/softdrinks/bsflora.webp"
+                },
+                {
+                    "name": "اكس ال",
+                    "category": "بارد",
+                    "sku": "B",
+                    "price": 6,
+                    "desc":"",
+                    "picture": "images/softdrinks/xl.webp"
+                },
+                {
+                    "name": "سبرايت",
+                    "category": "بارد",
+                    "sku": "BB",
+                    "price": "7/15",
+                    "desc":"",
+                    "picture": "images/softdrinks/sprite.webp"
+                },
+                {
+                    "name": "بلو",
+                    "category": "بارد",
+                    "sku": "BB",
+                    "price": 5,
+                    "desc":"",
+                    "picture": "images/softdrinks/blu.webp"
+                },
+                {
+                    "name": "سودا",
+                    "category": "بارد",
+                    "sku": "BB",
+                    "price": 6,
+                    "desc":"",
+                    "picture": "images/softdrinks/soda.webp"
+                },
+                {
+                    "name": "شويبس",
+                    "category": "بارد",
+                    "sku": "BB",
+                    "price": 6,
+                    "desc":"",
+                    "picture": "images/softdrinks/shwips.webp"
+                },
+                {
+                    "name": "بريغات",
+                    "category": "بارد",
+                    "sku": "BB",
+                    "price": 6,
+                    "desc":"",
+                    "picture": "images/softdrinks/prigat.webp"
+                },
+                {
+                    "name": "كولا",
+                    "category": "بارد",
+                    "sku": "BB",
+                    "price": "7/15",
+                    "desc":"",
+                    "picture": "images/softdrinks/cola.webp"
+                },
+                {
+                    "name": "مي",
+                    "category": "بارد",
+                    "sku": "BB",
+                                       "price": "5",
+                                       "desc":"",
+                    "picture": "images/softdrinks/water.webp"
+                }
+            ]
+        },
+        {
+            "name": "تمر 🌴",
+            "image": "images/categories/dates.webp",
+            "desc": "بسكويتات تمر مثل زرد، معمول، مقروطه واكثر",
+            "products": [
+                {
+                    "name": "مقروطه سميد",
+                    "category": "تمر",
+                    "sku": "D",
+                    "price": 40,
+                    "desc":"500 غرام",
+                    "picture": "images/dates/mgrota.webp"
+                },
+                {
+                    "name": "مقروطه كوسمين",
+                    "category": "تمر",
+                    "sku": "D",
+                    "price": 40,
+                    "desc":"500 غرام",
+                    "picture": "images/dates/magrota-kusmin.webp"
+                },
+                {
+                    "name": "معمول",
+                    "category": "تمر",
+                    "sku": "D",
+                    "price": 40,
+                    "desc":"500 غرام",
+                    "picture": "images/dates/mamol.webp"
+                },
+                {
+                    "name": "معمول كوسمين",
+                    "category": "تمر",
+                    "sku": "D",
+                    "price": 40,
+                    "desc":"500 غرام",
+                    "picture": "images/dates/mamol-kusmin.webp"
+                },
+                {
+                    "name": "مشكل",
+                    "category": "تمر",
+                    "sku": "D",
+                    "price": 40,
+                    "desc":"",
+                    "picture": "images/dates/mixed.webp"
+                },
+                {
+                    "name": "زرد",
+                    "category": "تمر",
+                    "sku": "D",
+                    "price": 35,
+                    "desc":"500 غرام",
+                    "picture": "images/dates/zrd.webp"
+                },
+                {
+                    "name": "زرد كوسمين",
+                    "category": "تمر",
+                    "sku": "D",
+                    "price": 40,
+                    "desc":"",
+                    "picture": "images/dates/mamol-kusmin.webp"
+                },
+                {
+                    "name": "مقروطه بفستق",
+                    "category": "تمر",
+                    "sku": "D",
+                    "price": 40,
+                    "desc":"",
+                    "picture": "images/dates/magrota-2.webp"
+                }
+            ]
+        },
+        {
+            "name": "ساخن ☕",
+            "image": "images/categories/hotdrinks.webp",
+            "desc": "شوكو، نس كافي، وانواع اخرى من المشروبات الساخنه",
+            "products": [
+                {
+                    "name": "هوت شوكليت",
+                    "category": "ساخن",
+                    "sku": "E",
+                    "price": "10/15",
+                    "desc":"",
+                    "picture": "images/hotdrinks/a.webp"
+                },
+                {
+                    "name": "نس كافي",
+                    "category": "ساخن",
+                    "sku": "EB",
+                    "price": "10/15",
+                    "desc":"",
+                    "picture": "images/hotdrinks/ns2.webp"
+                },
+                {
+                    "name": "اسبرسو",
+                    "category": "ساخن",
+                    "sku": "EB",
+                    "price": "5/8",
+                    "desc":"",
+                    "picture": "images/hotdrinks/nespresso.webp"
+                },
+                {
+                    "name": "كابتشينو",
+                    "category": "ساخن",
+                    "sku": "EB",
+                    "price": "10/15",
+                    "desc":"",
+                    "picture": "images/hotdrinks/ns.webp"
+                },
+                {
+                    "name": "سحلب",
+                    "category": "ساخن",
+                    "sku": "EB",
+                    "price": "10/15",
+                    "desc":"",
+                    "picture": "images/hotdrinks/sahlab.webp"
+                },
+                {
+                    "name": "شوكو",
+                    "category": "ساخن",
+                    "sku": "EB",
+                    "price": "10/15",
+                    "desc":"",
+                    "picture": "images/hotdrinks/shoko.webp"
+                }
+            ]
+        },
+        {
+            "name": "مناسبات 🎂",
+            "image": "images/categories/bdays.webp",
+            "desc": "كعكات اعياد ميلاد، اعراس ولجميع انواع المناسبات",
+            "products": [
+                {
+                    "name": "كعكه شكلاطه",
+                    "category": "مناسبات",
+                    "sku": "E",
+                    "price": 140,
+                    "desc":"",
+                    "picture": "images/bdays/bdays.webp"
+                },
+                {
+                    "name": "ريبات حلاڤ",
+                    "category": "مناسبات",
+                    "sku": "E",
+                    "price": 140,
+                    "desc":"",
+                    "picture": "images/bdays/carmel.webp"
+                },
+                {
+                    "name": "كعكه ٤ طعمات",
+                    "category": "مناسبات",
+                    "sku": "E",
+                    "price": 120,
+                    "desc":"",
+                    "picture": "images/bdays/4-types.webp"
+                },
+                {
+                    "name": "كعكه الفريرو",
+                    "category": "مناسبات",
+                    "sku": "EB",
+                    "price": 150,
+                    "desc":"",
+                    "picture": "images/bdays/frro.webp"
+                }
+            ]
+        }
+    ]
+}

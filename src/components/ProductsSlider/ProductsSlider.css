@@ -1,0 +1,17 @@
+.ProductsSlider{
+    padding: 15px;
+
+}
+.ProductsSlider p{
+    padding: 15px;
+}
+
+.react-multi-carousel-dot-list{
+    bottom: 130px !important;
+}
+.react-multi-carousel-dot-list {
+     bottom: 0px !important;
+}
+.react-multi-carousel-track {
+    margin-bottom: 30px !important;
+}
