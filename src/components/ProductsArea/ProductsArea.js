@@ -13,7 +13,7 @@ const ProductsArea = ({language,endPoint}) => {
   return (
 
     <div className='ProductsArea' style={{ padding: '15px' }}>
-      <Grid container spacing={2} style={styles.flex} rowSpacing={1} columnSpacing={{ xs: 1, sm: 2, md: 3 }}>
+      <Grid container spacing={2} style={styles.flex} rowspacing={1} columnspacing={{ xs: 1, sm: 2, md: 3 }}>
         {contentLng.categories.map((category, i) => (
           <React.Fragment key={i}>
             {/* Each Category Title */}
