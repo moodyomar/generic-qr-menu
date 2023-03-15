@@ -4,7 +4,7 @@ import heContent from "../../json/content-hr.json"
 import arContent from "../../json/content-ar.json"
 import './ProductsArea.css'
 import React from 'react'
-import { Link } from 'react-router-dom';
+// import { Link } from 'react-router-dom';
 
 
 
@@ -24,9 +24,9 @@ const ProductsArea = ({language,endPoint}) => {
               {category.products.map((product, i) => (
                 <Grid item xs={6} md={4} lg={3} key={i}>
                   {/* Each Product In The Above Category */}
-                  <Link to={`/${product.name}`} state={{ product }}>
+                  {/* <Link to={`/${product.name}`} state={{ product }}> */}
                   <ProductCard product={product} endPoint={endPoint}/>
-                  </Link>
+                  {/* </Link> */}
                   
                 </Grid>
               ))}

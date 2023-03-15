@@ -1,8 +1,9 @@
-import { Link, useLocation, useParams } from 'react-router-dom';
-import { BottomNavbar, Footer, Hero, Navbar } from '../components'
+import { Link, useLocation } from 'react-router-dom';
+import { BottomNavbar, Footer, Hero } from '../components'
+import Button from '@mui/material/Button';
 
 
-const Product = ({ endPoint, lng }) => {
+const Product = ({ endPoint }) => {
 
     const location = useLocation();
     const { product } = location.state;
@@ -11,14 +12,13 @@ const Product = ({ endPoint, lng }) => {
     return (
 
         <div className='Product'>
-            <Navbar />
-            <Hero heroBg={product.picture} textInHero={''} endPoint={endPoint}/>
+            <Hero heroBg={product.picture} mt='0px' textInHero={'in-hero.svg'} endPoint={endPoint}/>
             <div className="product-data" style={{marginTop:'25px',minHeight:'80vh'}}>
                 <h1>{product.name}</h1>
                 <p>{product.desc}</p>
                 <h2>{product.price}₪</h2>
                 <Link to={`/`}>
-                    <button>BACK</button>
+                <Button variant="contained">BACK</Button>
                 </Link>
             </div>
             <Footer />

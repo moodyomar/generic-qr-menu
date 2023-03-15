@@ -7,7 +7,7 @@ const Home = ({endPoint,lng}) => {
 
         <div className='Home'>
             <Navbar />
-            <Hero heroBg={'hero.jpeg'} textInHero={'in-hero.svg'} endPoint={endPoint} />
+            <Hero heroBg={'hero.jpeg'} mt='48px' textInHero={'in-hero.svg'} endPoint={endPoint} />
             <ProductsSlider language={lng} endPoint={endPoint} />
             <ProductsArea language={lng} endPoint={endPoint} />
             <Footer />
