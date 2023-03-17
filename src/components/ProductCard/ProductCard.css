@@ -90,6 +90,33 @@
   .food-card-details.show {
     opacity: 1;
   }
+  .food-card-details{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: 10px;
+  }
+  .order-notes{
+    margin-top: 10px;
+    padding-right: 5px;
+    height: 30px;
+    border-radius: 10px;
+    border: none;
+  }
+  .card-buttons{
+    margin-top: 10px;
+    gap: 10px;
+    display: flex;
+  }
+.card-buttons a{
+  text-decoration: none;
+  color: #fff;
+  display: flex;
+  gap: 5px;
+}
+.card-buttons a:יםהקר{
+  color: #FEFC00;
+}
   .food-card-details-text{
     color: white;
   }
