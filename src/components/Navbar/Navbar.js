@@ -13,8 +13,8 @@ import MenuItem from '@mui/material/MenuItem';
 import AdbIcon from '@mui/icons-material/Adb';
 import flagAR from '../../languages/flags/Ar.svg';
 import flagHE from '../../languages//flags/He.svg';
-import heContent from "../../json/content-hr.json"
-import arContent from "../../json/content-ar.json"
+import heContent from "../../languages/content-hr.json"
+import arContent from "../../languages/content-ar.json"
 import LanguageContext from '../../contexts/LanguageSwitcher'
 
 
@@ -22,7 +22,7 @@ function ResponsiveAppBar() {
   const [anchorElNav, setAnchorElNav] = React.useState(null);
   const [anchorElLang, setAnchorElLang] = React.useState(null);
   const [selectedLanguage, setSelectedLanguage] = React.useState("He");
-  const { language, changeLang} = React.useContext(LanguageContext);
+  const { language, changeLang } = React.useContext(LanguageContext);
   const contentLng = language === 'Ar' ? arContent : heContent
   const languages = ['Ar', 'He'];
 
@@ -59,10 +59,10 @@ function ResponsiveAppBar() {
   }
 
   React.useEffect(() => {
-  
-    
-  
-  },[] )
+
+
+
+  }, [])
 
 
   return (
@@ -133,7 +133,7 @@ function ResponsiveAppBar() {
             >
               {contentLng.categories.map((cat) => (
                 <MenuItem key={cat.name} onClick={handleCloseNavMenu}>
-                  <a href={`#${cat.name}`} style={{textDecoration:"none",color:"#1E1E1E"}}><Typography textAlign="center">{cat.name}</Typography></a>
+                  <a href={`#${cat.name}`} style={{ textDecoration: "none", color: "#1E1E1E" }}><Typography textAlign="center">{cat.name}</Typography></a>
                 </MenuItem>
               ))}
             </Menu>
@@ -163,13 +163,12 @@ function ResponsiveAppBar() {
             >
               {languages.map((language) => (
                 <MenuItem key={language} onClick={() => handleLanguageChange(language)}>
-                  {language === 'He' ? <img src={flagHE} alt="He flag" /> : <img src={flagAR} alt="Ar flag" />}
-                  <Typography style={{ color: 'white' }} textAlign="center" >{language}</Typography>
-                  {language}
+                  <img src={language === 'He' ? flagHE : flagAR} alt={selectedLanguage} style={{ filter: 'invert(1)'}} />
                 </MenuItem>
               ))}
             </Menu>
-          </Box>        </Toolbar>
+          </Box>
+        </Toolbar>
       </Container>
     </AppBar>
   );
