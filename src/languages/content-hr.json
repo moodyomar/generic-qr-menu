@@ -110,6 +110,14 @@
            }
         ]
      }
-     ]
+     ],
+     "whatsappDetails":{
+      "ownerPhone":"+9720532321265",
+      "wspMsgStart":"שלום، אני מעוניין להזמין",
+      "specialNotes":"הערות מיוחדות",
+      "shareBtn":"שתף",
+      "orderBtn":"הזמן",
+      "placeholder":"יש לך הערות מיוחדות?"
+     }
     
 }

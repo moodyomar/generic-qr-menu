@@ -25,7 +25,7 @@ const ProductsArea = ({language,endPoint}) => {
                 <Grid item xs={6} md={4} lg={3} key={i}>
                   {/* Each Product In The Above Category */}
                   {/* <Link to={`/${product.name}`} state={{ product }}> */}
-                  <ProductCard product={product} endPoint={endPoint}/>
+                  <ProductCard product={product} endPoint={endPoint} wspDetails={contentLng.whatsappDetails} />
                   {/* </Link> */}
                   
                 </Grid>
