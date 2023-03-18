@@ -1,6 +1,8 @@
-import React, { useState } from 'react';
+import React, { useContext, useEffect, useState } from 'react';
 import { FaShare } from 'react-icons/fa';
+import { MdOutlineAddCircle } from 'react-icons/md';
 import { RiWhatsappFill } from 'react-icons/ri';
+import WhatsappContext from '../../contexts/WhatsappCart'
 
 import './ProductCard.css';
 
@@ -10,6 +12,8 @@ export default function ProductCard({ product: { name, price, picture, desc }, e
   const [showDetails, setShowDetails] = useState(false);
   const [orderNotes,setOrderNotes] = useState(null);
   const defaultPic = picture ? picture : 'default.jpg';
+  const {memoizedValue} = useContext(WhatsappContext)
+
 
   const handleMouseEnter = () => {
     setShowDetails(true);
@@ -19,14 +23,20 @@ export default function ProductCard({ product: { name, price, picture, desc }, e
     setShowDetails(false);
   };
 
+  useEffect(() => {
+  
+    console.log(memoizedValue.productsInWspCart);
+  
+  },[memoizedValue] )
+
   return (
     <div className="food-card" data-aos={`zoom-in`} data-aos-duration="1000">
       <div
         className="food-card-img-container"
         onMouseEnter={handleMouseEnter}
-        onMouseLeave={handleMouseLeave}
-      >
+        onMouseLeave={handleMouseLeave}>
         <img className="logo" src={`${endPoint}logo.png`} alt="Logo" />
+        <button onClick={e => memoizedValue.addToWspCart({name, price})} className="add-product"><MdOutlineAddCircle size={25} color={'#60D003'} /></button>
         <img src={`${endPoint}${defaultPic}`} alt="Product" />
         <div className={`food-card-details${showDetails ? ' show' : ''}`}>
           <p className="food-card-details-text">{desc}</p>
@@ -38,10 +48,13 @@ export default function ProductCard({ product: { name, price, picture, desc }, e
               <FaShare size={20} color={'#FEFC00'}/>{shareBtn}</a>
           </div>
         </div>
+          {
+            !showDetails &&
         <div className="food-card-title-container">
           <h3 className="food-card-title">{name}</h3>
           <p className="food-card-price">₪{price}</p>
         </div>
+          }
       </div>
     </div>
   );

@@ -9,7 +9,17 @@
     transform: scale(1.05) !important;
     /* box-shadow: 0px 10px 40px rgba(0, 0, 0, 0.3); */
   }
-  
+  .add-product{
+    position: absolute;
+    left: 0;
+    padding: 8px 8px 0px;
+    display: flex;
+    background-color: #ffffff00;
+    border: none;
+    width: 40px;
+    height: 40px;
+    z-index: 5;
+  }
   .food-card-img-container {
     position: relative;
     overflow: hidden;
@@ -93,7 +103,7 @@
   .food-card-details{
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
+    justify-content: center;
     padding: 10px;
   }
   .order-notes{

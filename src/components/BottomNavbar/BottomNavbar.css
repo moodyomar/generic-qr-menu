@@ -6,3 +6,34 @@
     color: #FFFC00 !important;
   }
   
+  .cart-counter{
+    width: 18px;
+    height: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.8rem;
+    border-radius: 50%;
+    background-color: #c90808;
+    left: 0;
+    margin-top: 10px;
+    margin-left: 70px;
+    color: #fff;
+    position: absolute;
+    transition: all .35s ease-in;
+  }
+  .product-been-added{
+    animation: scaleShrink .45s forwards;
+  }
+
+  @keyframes scaleShrink {
+    0%{
+      transform: scale(0.9);
+    }
+    50%{
+      transform: scale(1.25);
+    }
+    100%{
+      transform: scale(1);
+    }
+  }

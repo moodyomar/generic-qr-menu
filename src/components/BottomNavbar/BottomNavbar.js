@@ -1,14 +1,30 @@
 import * as React from 'react';
+import './BottomNavbar.css';
 import Box from '@mui/material/Box';
 import BottomNavigation from '@mui/material/BottomNavigation';
 import BottomNavigationAction from '@mui/material/BottomNavigationAction';
 import ArrowUpwardIcon from '@mui/icons-material/ArrowUpward';
 import InstagramIcon from '@mui/icons-material/Instagram';
 import WhatsAppIcon from '@mui/icons-material/WhatsApp';
+import WhatsappContext from '../../contexts/WhatsappCart';
+import LanguageContext from '../../contexts/LanguageSwitcher';
+import arContent from '../../languages/content-ar.json'
+import heContent from '../../languages/content-hr.json'
 
 export default function SimpleBottomNavigation() {
   const [value, setValue] = React.useState(0);
   const [selectedIndex, setSelectedIndex] = React.useState(0);
+  const {memoizedValue} = React.useContext(WhatsappContext)
+  const {language} = React.useContext(LanguageContext)
+  const [prodcutAdded,setProdcutAdded] = React.useState(false);
+  const contentLng = language === 'He' ? heContent : arContent  
+  const {ownerPhone, wspMsgStart} = contentLng.whatsappDetails
+
+React.useEffect(() => {
+
+  setProdcutAdded(true)
+
+},[memoizedValue.productsInWspCart,prodcutAdded] )
 
   const handleClick = (index) => {
     setSelectedIndex(index);
@@ -24,7 +40,7 @@ export default function SimpleBottomNavigation() {
         });
         break;
       case 2:
-        window.location.href = "https://wa.link/fmhf1i"
+        window.location.href = `https://api.whatsapp.com/send?phone=${ownerPhone}&text=${wspMsgStart} ${memoizedValue.productsInWspCart.map(product => product.name)}`
         break;
       default:
         break;
@@ -45,7 +61,10 @@ export default function SimpleBottomNavigation() {
         <BottomNavigationAction icon={<InstagramIcon style={{ color: selectedIndex === 0 ? hoverColor : 'white' }} />} onClick={() => handleClick(0)} />
         <BottomNavigationAction icon={<ArrowUpwardIcon style={{ color: selectedIndex === 1 ? hoverColor : 'white' }} />} onClick={() => handleClick(1)} />
         <BottomNavigationAction icon={<WhatsAppIcon style={{ color: selectedIndex === 2 ? hoverColor : 'white' }} />} onClick={() => handleClick(2)} />
-      </BottomNavigation>
+        { memoizedValue.productsInWspCart.length > 0 &&
+          <div className={`cart-counter ${prodcutAdded ? 'product-been-added' : ''}`}>{memoizedValue.productsInWspCart.length}</div>
+        }
+          </BottomNavigation>
     </Box>
   );
 }
