@@ -17,11 +17,22 @@ const addToWspCart = useCallback(
     },
     [setProductsInWspCart]
   );
+  
+  const removeFromWspCart = useCallback(
+    (productId) => {
+      setProductsInWspCart((productsInWspCart) =>
+        productsInWspCart.filter((product) => product.id !== productId)
+      );
+    },
+    [setProductsInWspCart]
+  );
+  
 
   const memoizedValue = useMemo(
     () => ({
       productsInWspCart,
       addToWspCart,
+      removeFromWspCart
     }),
     [productsInWspCart, addToWspCart]
   );
