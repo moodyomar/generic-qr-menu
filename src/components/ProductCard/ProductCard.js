@@ -3,7 +3,7 @@ import { FaShare } from 'react-icons/fa';
 import { MdOutlineAddCircle } from 'react-icons/md';
 import { RiWhatsappFill } from 'react-icons/ri';
 import WhatsappContext from '../../contexts/WhatsappCart'
-
+import { v4 as uuid } from 'uuid';
 import './ProductCard.css';
 
 export default function ProductCard({ product: { name, price, picture, desc }, endPoint, 
@@ -36,7 +36,7 @@ export default function ProductCard({ product: { name, price, picture, desc }, e
         onMouseEnter={handleMouseEnter}
         onMouseLeave={handleMouseLeave}>
         <img className="logo" src={`${endPoint}logo.png`} alt="Logo" />
-        <button onClick={e => memoizedValue.addToWspCart({name, price})} className="add-product"><MdOutlineAddCircle size={25} color={'#60D003'} /></button>
+        <button onClick={e => memoizedValue.addToWspCart({name, price, picture, id:uuid()})} className="add-product"><MdOutlineAddCircle size={25} color={'#60D003'} /></button>
         <img src={`${endPoint}${defaultPic}`} alt="Product" />
         <div className={`food-card-details${showDetails ? ' show' : ''}`}>
           <p className="food-card-details-text">{desc}</p>
