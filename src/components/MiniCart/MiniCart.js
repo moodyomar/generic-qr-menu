@@ -21,7 +21,7 @@ return(
         </button>
       </div>
     )}
-    <div className="total">{'a'}</div>
+    <strong className="total">סך הכל ₪{memoizedValue.productsInWspCart.reduce((acc, curr) => acc + Number(curr.price), 0)}</strong>
   </div>
 
 )

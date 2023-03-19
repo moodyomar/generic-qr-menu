@@ -73,7 +73,7 @@
               "name": "קולה",
               "category": "שתיה קלה",
               "sku": "B",
-              "price": "5/10",
+              "price": "6",
               "desc": "",
               "picture": "images/cola.webp"
            },
@@ -81,7 +81,7 @@
               "name": "ספרייט",
               "category": "שתיה קלה",
               "sku": "B",
-              "price": "5/10",
+              "price": "6",
               "desc": "",
               "picture": "images/sprite.webp"
            }

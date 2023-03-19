@@ -73,7 +73,7 @@
               "name": "كولا",
               "category": "مشروبات",
               "sku": "B",
-              "price": "5/10",
+              "price": "6",
               "desc": "علبه ٢٥٠ مل",
               "picture": "images/cola.webp"
            },
@@ -81,7 +81,7 @@
               "name": "سبرايت",
               "category": "مشروبات",
               "sku": "B",
-              "price": "5/10",
+              "price": "6",
               "desc": "علبه ٢٥٠ مل",
               "picture": "images/sprite.webp"
            }
