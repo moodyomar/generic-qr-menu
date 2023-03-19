@@ -34,7 +34,7 @@ const addToWspCart = useCallback(
       addToWspCart,
       removeFromWspCart
     }),
-    [productsInWspCart, addToWspCart]
+    [productsInWspCart, addToWspCart, removeFromWspCart]
   );
 
   return <WhatsappContext.Provider value={{

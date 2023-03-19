@@ -10,7 +10,8 @@ import WhatsappContext from '../../contexts/WhatsappCart';
 import LanguageContext from '../../contexts/LanguageSwitcher';
 import arContent from '../../languages/content-ar.json'
 import heContent from '../../languages/content-hr.json'
-import { MdOutlineRemoveCircle } from 'react-icons/md';
+import MiniCart from '../MiniCart/MiniCart';
+
 
 export default function SimpleBottomNavigation() {
   const { memoizedValue } = React.useContext(WhatsappContext)
@@ -66,20 +67,7 @@ export default function SimpleBottomNavigation() {
           onClick={() => handleClick('scrollup')} />
         <BottomNavigationAction icon={<WhatsAppIcon style={{ color: selectedIndex === 'wspcart' ? hoverColor : 'white' }} />}
           onClick={() => handleClick('wspcart')} />
-        {memoizedValue.productsInWspCart.length > 0 &&
-          <div className="cart bubble-bottom-left">
-            {memoizedValue.productsInWspCart.map(product =>
-              <div className="product-row">
-                <img src={product.picture} alt={product.name} width={30} height={30} />
-                <p>{product.name}</p>
-                <p>₪{product.price}</p>
-                <button onClick={() => memoizedValue.removeFromWspCart(product.id)} className='remove-product-btn'>
-                  <MdOutlineRemoveCircle size={22} color={'red'} />
-                </button>
-              </div>
-            )}
-          </div>
-        }
+        {memoizedValue.productsInWspCart.length > 0 && <MiniCart/> }
         {memoizedValue.productsInWspCart.length > 0 &&
           <div className={`cart-counter ${prodcutAdded ? 'product-been-added' : ''}`}>
             {memoizedValue.productsInWspCart.length}</div>
