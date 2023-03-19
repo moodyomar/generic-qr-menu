@@ -10,36 +10,38 @@ import WhatsappContext from '../../contexts/WhatsappCart';
 import LanguageContext from '../../contexts/LanguageSwitcher';
 import arContent from '../../languages/content-ar.json'
 import heContent from '../../languages/content-hr.json'
+import { MdOutlineRemoveCircle } from 'react-icons/md';
 
 export default function SimpleBottomNavigation() {
+  const { memoizedValue } = React.useContext(WhatsappContext)
+  const { language } = React.useContext(LanguageContext)
+  const contentLng = language === 'He' ? heContent : arContent
+  const { ownerPhone, wspMsgStart } = contentLng.whatsappDetails
+  
   const [value, setValue] = React.useState(0);
   const [selectedIndex, setSelectedIndex] = React.useState(0);
-  const {memoizedValue} = React.useContext(WhatsappContext)
-  const {language} = React.useContext(LanguageContext)
-  const [prodcutAdded,setProdcutAdded] = React.useState(false);
-  const contentLng = language === 'He' ? heContent : arContent  
-  const {ownerPhone, wspMsgStart} = contentLng.whatsappDetails
+  const [prodcutAdded, setProdcutAdded] = React.useState(false);
 
-React.useEffect(() => {
+  React.useEffect(() => {
 
-  setProdcutAdded(true)
+    setProdcutAdded(true)
 
-},[memoizedValue.productsInWspCart,prodcutAdded] )
+  }, [memoizedValue.productsInWspCart, prodcutAdded])
 
   const handleClick = (index) => {
     setSelectedIndex(index);
     switch (index) {
-      case 0:
+      case 'ig':
         window.location.href = "http://instagram.com/sweets_safaa/"
         break;
-      case 1:
+      case 'scrollup':
         window.scrollTo({
           top: 0,
           left: 0,
           behavior: 'smooth'
         });
         break;
-      case 2:
+      case 'wspcart':
         window.location.href = `https://api.whatsapp.com/send?phone=${ownerPhone}&text=${wspMsgStart} ${memoizedValue.productsInWspCart.map(product => product.name)}`
         break;
       default:
@@ -58,13 +60,31 @@ React.useEffect(() => {
         onChange={(event, newValue) => {
           setValue(newValue);
         }}>
-        <BottomNavigationAction icon={<InstagramIcon style={{ color: selectedIndex === 0 ? hoverColor : 'white' }} />} onClick={() => handleClick(0)} />
-        <BottomNavigationAction icon={<ArrowUpwardIcon style={{ color: selectedIndex === 1 ? hoverColor : 'white' }} />} onClick={() => handleClick(1)} />
-        <BottomNavigationAction icon={<WhatsAppIcon style={{ color: selectedIndex === 2 ? hoverColor : 'white' }} />} onClick={() => handleClick(2)} />
-        { memoizedValue.productsInWspCart.length > 0 &&
-          <div className={`cart-counter ${prodcutAdded ? 'product-been-added' : ''}`}>{memoizedValue.productsInWspCart.length}</div>
+        <BottomNavigationAction icon={<InstagramIcon style={{ color: selectedIndex === 'ig' ? hoverColor : 'white' }} />}
+          onClick={() => handleClick('ig')} />
+        <BottomNavigationAction icon={<ArrowUpwardIcon style={{ color: selectedIndex === 'scrollup' ? hoverColor : 'white' }} />}
+          onClick={() => handleClick('scrollup')} />
+        <BottomNavigationAction icon={<WhatsAppIcon style={{ color: selectedIndex === 'wspcart' ? hoverColor : 'white' }} />}
+          onClick={() => handleClick('wspcart')} />
+        {memoizedValue.productsInWspCart.length > 0 &&
+          <div className="cart bubble-bottom-left">
+            {memoizedValue.productsInWspCart.map(product =>
+              <div className="product-row">
+                <img src={product.picture} alt={product.name} width={30} height={30} />
+                <p>{product.name}</p>
+                <p>₪{product.price}</p>
+                <button onClick={() => memoizedValue.removeFromWspCart(product.id)} className='remove-product-btn'>
+                  <MdOutlineRemoveCircle size={22} color={'red'} />
+                </button>
+              </div>
+            )}
+          </div>
         }
-          </BottomNavigation>
+        {memoizedValue.productsInWspCart.length > 0 &&
+          <div className={`cart-counter ${prodcutAdded ? 'product-been-added' : ''}`}>
+            {memoizedValue.productsInWspCart.length}</div>
+        }
+      </BottomNavigation>
     </Box>
   );
 }
