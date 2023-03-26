@@ -1,8 +1,8 @@
 import './ProductsSlider.css'
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
-import heContent from "../../languages/content-hr.json"
-import arContent from "../../languages/content-ar.json"
+import heContent from "../../languages/hebrew.json"
+import arContent from "../../languages/arabic.json"
 import { Title } from '../';
 import { CategoryCard } from '..';
 

@@ -8,8 +8,8 @@ import InstagramIcon from '@mui/icons-material/Instagram';
 import WhatsAppIcon from '@mui/icons-material/WhatsApp';
 import WhatsappContext from '../../contexts/WhatsappCart';
 import LanguageContext from '../../contexts/LanguageSwitcher';
-import arContent from '../../languages/content-ar.json'
-import heContent from '../../languages/content-hr.json'
+import arContent from '../../languages/arabic.json'
+import heContent from '../../languages/hebrew.json'
 import MiniCart from '../MiniCart/MiniCart';
 
 

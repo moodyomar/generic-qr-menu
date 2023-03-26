@@ -1,7 +1,7 @@
 import { ProductCard, Title } from '../'
 import Grid from '@material-ui/core/Grid'
-import heContent from "../../languages/content-hr.json"
-import arContent from "../../languages/content-ar.json"
+import heContent from "../../languages/hebrew.json"
+import arContent from "../../languages/arabic.json"
 import './ProductsArea.css'
 import React from 'react'
 // import { Link } from 'react-router-dom';

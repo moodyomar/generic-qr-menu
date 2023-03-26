@@ -13,8 +13,8 @@ import MenuItem from '@mui/material/MenuItem';
 import AdbIcon from '@mui/icons-material/Adb';
 import flagAR from '../../languages/flags/Ar.svg';
 import flagHE from '../../languages//flags/He.svg';
-import heContent from "../../languages/content-hr.json"
-import arContent from "../../languages/content-ar.json"
+import heContent from "../../languages/hebrew.json"
+import arContent from "../../languages/arabic.json"
 import LanguageContext from '../../contexts/LanguageSwitcher'
 
 
