@@ -138,11 +138,14 @@ function ResponsiveAppBar() {
               ))}
             </Menu>
           </Box>
+          <Box sx={{ flexGrow: 1, display: { xs: 'flex', md: 'none' } }}>
+            <img src="logo.png" alt="QB Media" width={30}/>
+          </Box>
           {/* Language Switcher */}
           <Box sx={{ flexGrow: 0 }}>
             <Tooltip title="Select language">
               <IconButton onClick={handleOpenLangMenu} sx={{ p: 0 }}>
-                <img src={selectedLanguage === 'He' ? flagHE : flagAR} alt={selectedLanguage} sx={{ height: '15px', marginRight: '10px' }} />
+                <img className='lng-symbol' src={selectedLanguage === 'He' ? flagHE : flagAR} alt={selectedLanguage} sx={{ height: '15px', marginRight: '10px' }} />
               </IconButton>
             </Tooltip>
             <Menu

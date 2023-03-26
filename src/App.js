@@ -14,12 +14,11 @@ const App = () => {
         offset: 200,
     });
 
-    const endPoint = "https://ik.imagekit.io/bbtbvbqon/food-menus/topburger/"
+    const endPoint = ""
     const { language } = React.useContext(LanguageContext);
-
     return (
 
-        <div className='App' style={{ textAlign: "center" }}>
+        <div className='App' style={{ textAlign: "center", fontFamily: language === 'He' ? 'Fredoka, sans-serif' : 'Tajawal, sans-serif'}}>
             <Router>
             <ScrollToTop />
                 <Routes>
