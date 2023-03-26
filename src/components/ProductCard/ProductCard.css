@@ -52,7 +52,7 @@
   .food-card-title {
     margin: 0;
     font-size: 15px;
-    font-weight: normal;
+    font-weight: bold;
   }
   
   .food-card-price {
@@ -62,7 +62,7 @@
     background-color: var(--hoverColor);
     color: #090A0B;
     width: auto;
-    padding: 1px 5px;
+    padding: 2px 5px 2px 5px;
     border-radius: 10px;
   }
   
@@ -124,7 +124,7 @@
   display: flex;
   gap: 5px;
 }
-.card-buttons a:יםהקר{
+.card-buttons a:hover{
   color: #FEFC00;
 }
   .food-card-details-text{

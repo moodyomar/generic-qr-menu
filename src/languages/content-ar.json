@@ -84,6 +84,22 @@
               "price": "6",
               "desc": "علبه ٢٥٠ مل",
               "picture": "images/sprite.webp"
+           },
+           {
+              "name": "فانتا",
+              "category": "مشروبات",
+              "sku": "B",
+              "price": "6",
+              "desc": "علبه ٢٥٠ مل",
+              "picture": "images/fanta.jpeg"
+           },
+           {
+              "name": "مياه",
+              "category": "مشروبات",
+              "sku": "B",
+              "price": "6",
+              "desc": "قنينه ٥٠٠ مل",
+              "picture": "images/water.jpeg"
            }
         ]
      },
@@ -112,7 +128,7 @@
      }
      ],
      "whatsappDetails":{
-      "ownerPhone":"+9720532321265",
+      "ownerPhone":"+9720525511812",
       "wspMsgStart":"مرحبا، دوصي على",
       "specialNotes":"ملاحظات مهمه",
       "shareBtn":"شارك",

@@ -12,7 +12,8 @@ return(
 
     <div className="cart bubble-bottom-left">
     {memoizedValue.productsInWspCart.map(product =>
-      <div className="product-row">
+      <div key={product.id} className="product-row">
+        <p>x{product.qnty}</p>
         <img src={product.picture} alt={product.name} width={30} height={30} />
         <p>{product.name}</p>
         <p>₪{product.price}</p>
@@ -21,7 +22,8 @@ return(
         </button>
       </div>
     )}
-    <strong className="total">סך הכל ₪{memoizedValue.productsInWspCart.reduce((acc, curr) => acc + Number(curr.price), 0)}</strong>
+    {/* <hr /> */}
+    {/* <strong className="total">סך הכל ₪{memoizedValue.productsInWspCart.reduce((acc, curr) => acc + Number(curr.price), 0)}</strong> */}
   </div>
 
 )

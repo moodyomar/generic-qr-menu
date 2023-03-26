@@ -58,7 +58,7 @@
               "name": "צ׳יפס",
               "category": "מאנץ׳",
               "sku": "CB",
-              "price": "10/15",
+              "price": "12",
               "desc": "צי׳פס / פרינץ׳ פרייז",
               "picture": "images/chips.jpeg"
            }
@@ -74,7 +74,7 @@
               "category": "שתיה קלה",
               "sku": "B",
               "price": "6",
-              "desc": "",
+              "desc": "פחית 250 מ״ל",
               "picture": "images/cola.webp"
            },
            {
@@ -82,8 +82,24 @@
               "category": "שתיה קלה",
               "sku": "B",
               "price": "6",
-              "desc": "",
+              "desc": "פחית 250 מ״ל",
               "picture": "images/sprite.webp"
+           },
+           {
+              "name": "פנטה",
+              "category": "שתיה קלה",
+              "sku": "B",
+              "price": "6",
+              "desc": "פחית 250 מ״ל",
+              "picture": "images/fanta.jpeg"
+           },
+           {
+              "name": "מים",
+              "category": "שתיה קלה",
+              "sku": "B",
+              "price": "6",
+              "desc": "בקבוק 500 מ״ל",
+              "picture": "images/water.jpeg"
            }
         ]
      },
@@ -112,7 +128,7 @@
      }
      ],
      "whatsappDetails":{
-      "ownerPhone":"+9720532321265",
+      "ownerPhone":"+9720525511812",
       "wspMsgStart":"שלום، אני מעוניין להזמין",
       "specialNotes":"הערות מיוחדות",
       "shareBtn":"שתף",

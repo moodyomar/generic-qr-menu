@@ -23,6 +23,11 @@ export default function ProductCard({ product: { name, price, picture, desc }, e
     setShowDetails(false);
   };
 
+  const checkIfExists = (name) => {
+    memoizedValue.productsInWspCart.forEach(product => console.log(product.name))
+    console.log(memoizedValue.productsInWspCart)
+  };
+
   return (
     <div className="food-card" data-aos={`zoom-in`} data-aos-duration="1000">
       <div
@@ -30,7 +35,7 @@ export default function ProductCard({ product: { name, price, picture, desc }, e
         onMouseEnter={handleMouseEnter}
         onMouseLeave={handleMouseLeave}>
         <img className="logo" src={`${endPoint}logo.png`} alt="Logo" />
-        <button onClick={e => memoizedValue.addToWspCart({ name, price, picture, id: uuid() })} className="add-product"><MdOutlineAddCircle size={25} color={'#60D003'} /></button>
+        <button onClick={e => memoizedValue.addToWspCart({ name, price, picture, id: uuid(), qnty: 1 })} className="add-product"><MdOutlineAddCircle size={25} color={'#60D003'} /></button>
         <img src={`${endPoint}${defaultPic}`} alt="Product" />
         <div className={`food-card-details${showDetails ? ' show' : ''}`}>
           <p className="food-card-details-text">{desc}</p>

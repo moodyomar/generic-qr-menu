@@ -4,9 +4,9 @@ return(
 
 <div className='Footer' style={footerStyle}>
 <p>פיתוח על ידי <a href="https://qbmedia.co.il" target="_blank" rel="noreferrer" style={footerStyle.a}>קיובי מדיה</a></p>
-<a href="https://qbmedia.co.il" target="_blank" rel="noreferrer">
+{/* <a href="https://qbmedia.co.il" target="_blank" rel="noreferrer">
     <img src={process.env.PUBLIC_URL + 'qbmedia.svg'} width={125} alt="QB Media" style={footerStyle.img}/>
-</a>
+</a> */}
 </div>
 
 )
@@ -23,8 +23,9 @@ const footerStyle = {
     alignItems:"center",
     a:{
         textDecoration:"none",
-        color:"#D39F47",
-        pointer:"cursor"
+        color:"#FEFC00",
+        pointer:"cursor",
+        fontWeight:'bold'
     },
     img:{
         marginTop:'10px'

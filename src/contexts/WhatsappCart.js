@@ -5,12 +5,6 @@ export const WhatsappProvider = ({children}) => {
 
     const [productsInWspCart,setProductsInWspCart] = useState([]);
 
-// funcs
-
-// const addToWspCart = (product) => {
-//     setProductsInWspCart(productsInWspCart => [...productsInWspCart, product]);
-// }
-
 const addToWspCart = useCallback(
     (product) => {
       setProductsInWspCart((productsInWspCart) => [...productsInWspCart, product,]);
